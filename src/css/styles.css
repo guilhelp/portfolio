@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;900&display=swap');
+
+body {
+    background-color: #303030;
+    margin-top: 150px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin-left: 150px;
+    margin-right: 150px;
+    max-width: 1100px;
+    padding: 100px;
+
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    display: flex;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    justify-content: space-between;
+}
+
+.text h1,
+h2 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.titulo {
+    font-size: 120px;
+    text-align: left;
+}
+
+.subtitulo {
+    font-size: 40px;
+    text-align: left;
+    top: 120px;
+    right: 0px;
+    margin-left: 400px;
+}
+
+.imagens {
+    display: flex;
+}
+
+.imagens img {
+    width: 322px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text {
+        margin-bottom: 20px;
+    }
+
+    .subtitulo {
+        margin-left: 220px;
+        margin-top: 5px;
+    }
+
+    .titulo {
+        font-size: 90px;
+    }
+
+    .imagens img {
+        width: 322px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .titulo {
+        font-size: 80px;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+        margin-left: 230px;
+    }
+
+    .imagens img {
+
+        border-radius: 10px;
+        margin-top: 20px;
+
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .titulo {
+        font-size: 120px;
+    }
+
+    .subtitulo {
+        font-size: 40px;
+    }
+}
+
+.sobre {
+    text-align: center;
+    position: relative;
+    display: flex;
+}
+
+.sobretexts {
+    text-align: left;
+    position: relative;
+}
+
+.titulosobre {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.sobretexts p {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 30px;
+    margin-right: 100px;
+}
+
+.foto img {
+    margin-top: 150px;
+    width: 322px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .sobre {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobretexts {
+        text-align: left;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .titulosobre {
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .sobretexts p {
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        text-align: justify;
+        line-height: 30px;
+        margin-bottom: 20px;
+        width: 500px;
+    }
+
+    .foto img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+}
+
+/* HABILIDADES */
+
+.habilidades {
+    margin-top: 80px;
+    background-color: white;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulohabilidades {
+    justify-content: right;
+    margin-right: 100px;
+    width: 300px;
+    text-align: right;
+}
+
+.titulohabilidades h1 {
+    color: #303030;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+}
+
+.tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.tecnologia {
+    text-align: center;
+    width: 100px;
+}
+
+.tecnologia img {
+    width: 60px;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.tecnologias p {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .habilidades {
+        margin-top: 80px;
+        background-color: white;
+        max-width: 92%; 
+        height: 650px;
+        min-height: 350px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+       
+    }
+
+    .titulohabilidades {
+        margin-right: 20px;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .titulohabilidades h1 {
+        color: #303030;
+        font-family: 'Inter', sans-serif;
+        font-size: 40px;
+    }
+
+    .tecnologias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        
+    }
+
+    .tecnologia {
+        text-align: center;
+        margin: 10px 0;
+        
+    }
+
+    .tecnologia img {
+        width: 60px;
+        margin-bottom: 10px;
+       
+    }
+
+    .linha {
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: center;
+        
+    }
+
+    .tecnologias p {
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 5px;
+        
+    }
+}
+
+/* PROJETOS */
+
+.projetos h1 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: left;
+}
+
+.cards {
+    margin-top: 30px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    background-color: white;
+    width: 100%px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 35px;
+}
+
+.card1:hover {
+    transform: scale(1.05);
+    
+}
+
+.card2 {
+    background-color: white;
+    width: 100%px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 35px;
+}
+
+.card2:hover {
+    transform: scale(1.05);
+    
+}
+
+.card3 {
+    background-color: white;
+    width: 100%px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card3:hover {
+    transform: scale(1.05);
+}
+
+.esquerdo {
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.esquerdo h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #303030;
+}
+
+.esquerdo p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #303030;
+}
+
+.esquerdo img {
+    width: 10%;
+}
+
+.direito {
+    width: 700px;
+}
+
+.fotosProjects {
+    width: 80%;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+.projetos h1 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: left;
+}
+
+.cards {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.card1,
+.card2,
+.card3 {
+    background-color: white;
+    max-width: 100%; 
+    height: 700px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 35px;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: scale(1.05);
+   
+}
+
+.esquerdo {
+    text-align: left;
+    margin: 20px; 
+}
+
+.esquerdo h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #303030;
+}
+
+.esquerdo p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; 
+    color: #303030;
+}
+
+.esquerdo img {
+    width: 10%; 
+}
+
+.direito {
+    width: 100%;
+}
+
+.fotosProjects {
+    width: 100%; 
+}
+
+
+}
+
+
+/* FOOTER */
+.final {
+    margin-top: 80px;
+    width: 100%;
+    height: 500px;
+    text-align: left;
+}
+
+.final h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 70px;
+}
+
+.linkedin {
+    width: 75px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.github {
+    width: 75px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 10px;
+}
+
+.final p {
+    margin-top: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.curriculo {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #303030;
+}
